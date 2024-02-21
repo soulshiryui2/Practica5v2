@@ -33,7 +33,7 @@
         android:paddingHorizontal="50dp">
 
         <Button
-            android:id="@+id/button_cold_drinks"
+            android:id="@+id/btnAntojitos"
            android:textColor="@color/white"
             android:background="@drawable/first_gradient"
             android:paddingHorizontal="@dimen/menu_buttons_paddings"
@@ -45,7 +45,7 @@
             android:text="@string/antojitos" />
 
         <Button
-            android:id="@+id/button_hot_drinks"
+            android:id="@+id/btnespecialidades"
             android:textColor="@color/white"
             android:background="@drawable/first_gradient"
             android:paddingHorizontal="@dimen/menu_buttons_paddings"
@@ -56,6 +56,7 @@
             android:paddingVertical="@dimen/menu_buttons_paddings"
             android:text="@string/especialidades" />
         <Button
+            android:id="@+id/btncombinaciones"
             android:textColor="@color/white"
             android:background="@drawable/first_gradient"
             android:paddingHorizontal="@dimen/menu_buttons_paddings"
@@ -66,7 +67,7 @@
             android:paddingVertical="@dimen/menu_buttons_paddings"
             android:text="@string/combinations" />
         <Button
-
+            android:id="@+id/btntortas"
             android:textColor="@color/white"
             android:background="@drawable/first_gradient"
             android:paddingHorizontal="@dimen/menu_buttons_paddings"
@@ -77,7 +78,7 @@
             android:paddingVertical="@dimen/menu_buttons_paddings"
             android:text="@string/tortas" />
         <Button
-
+            android:id="@+id/btnsopas"
             android:textColor="@color/white"
             android:background="@drawable/first_gradient"
             android:paddingHorizontal="@dimen/menu_buttons_paddings"
@@ -88,7 +89,7 @@
             android:paddingVertical="@dimen/menu_buttons_paddings"
             android:text="@string/sopas" />
         <Button
-
+            android:id="@+id/btndrinks"
             android:textColor="@color/white"
             android:background="@drawable/first_gradient"
             android:paddingHorizontal="@dimen/menu_buttons_paddings"
