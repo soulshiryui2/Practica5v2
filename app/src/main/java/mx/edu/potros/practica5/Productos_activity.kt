@@ -15,6 +15,8 @@ import mx.edu.potros.practica5.R
 var menu: ArrayList<Product> = ArrayList<Product>()
 class Productos_activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        menu = ArrayList<Product>()
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_productos)
         var menuOption:String? =intent.getStringExtra("menuType")
@@ -153,32 +155,25 @@ var imagen: ImageView =  findViewById(R.id.title1)
 
     }
     private class AdaptadorProductos: BaseAdapter{
-        var productos=ArrayList<Product>()
+        var producto=ArrayList<Product>()
         var contexto: Context? = null
-        constructor(contexto:Context,productos: ArrayList<Product>){
-            this.productos=productos
+        constructor(contexto:Context, producto: ArrayList<Product>){
+            this.producto=producto
             this.contexto=contexto
         }
-
         override fun getCount(): Int {
-            TODO("Not yet implemented")
-            return productos.size
+            return producto.size
 
         }
-
         override fun getItem(position: Int): Any {
-            TODO("Not yet implemented")
-            return productos[position]
+            return producto[position]
         }
-
         override fun getItemId(position: Int): Long {
-            TODO("Not yet implemented")
             return position.toLong()
         }
 
         override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-            TODO("Not yet implemented")
-            var prod=productos[position]
+            var prod=producto[position]
             var inflador= LayoutInflater.from(contexto)
             var vista=inflador.inflate(R.layout.producto_view,null)
 

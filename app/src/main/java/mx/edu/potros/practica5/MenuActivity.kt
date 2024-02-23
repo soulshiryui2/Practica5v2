@@ -10,12 +10,12 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-        var btnAntojitos: Button = findViewById(R.id.btnAntojitos)
-        var btnEspecialidades: Button = findViewById(R.id.btnEspecialidades)
-        var btnCombinaciones: Button = findViewById(R.id.btnCombinaciones)
-        var btnTortas: Button = findViewById(R.id.btnTortas)
-        var btnSopas: Button = findViewById(R.id.btnSopas)
-        var btnBebidas: Button = findViewById(R.id.btnDrinks)
+        var btnAntojitos: Button = findViewById(R.id.btnAntojitos) as Button
+        var btnEspecialidades: Button = findViewById(R.id.btnEspe) as Button
+        var btnCombinaciones: Button = findViewById(R.id.btnCombi) as Button
+        var btnTortas: Button = findViewById(R.id.btnTortas) as Button
+        var btnSopas: Button = findViewById(R.id.btnSopas) as Button
+        var btnBebidas: Button = findViewById(R.id.btnDrink) as Button
 
         btnAntojitos.setOnClickListener {
             var intent = Intent(this, Productos_activity::class.java)
