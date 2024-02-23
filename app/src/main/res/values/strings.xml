@@ -21,6 +21,7 @@
     <string name="tortas">Tortas</string>
     <string name="sopas">Sopas</string>
     <string name="drinks">Drinks</string>
+    <string name="descriptive_text_for_image">Descripción de la imagen</string>
 
 
 </resources>

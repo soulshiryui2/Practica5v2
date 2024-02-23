@@ -20,12 +20,42 @@ class Productos_activity : AppCompatActivity() {
         var menuOption:String? =intent.getStringExtra("menuType")
         agregarProductos(menuOption)
 
+var imagen: ImageView =  findViewById(R.id.title1)
+
+        when(menuOption){
+            "Antojitos"->{
+                imagen.setImageResource(R.drawable.antojitos)
+            }
+            "Especialidades"->{
+                imagen.setImageResource(R.drawable.especialidades)
+
+            }
+            "Combinations"->{
+                imagen.setImageResource(R.drawable.combinations)
+
+            }
+            "Tortas"->{
+                imagen.setImageResource(R.drawable.tortas)
+
+            }
+            "Sopas"->{
+                imagen.setImageResource(R.drawable.sopas)
+
+            }
+            "Bebidas"->{
+                imagen.setImageResource(R.drawable.drinks)
+
+            }
+
+
+            }
         var listView: ListView = findViewById(R.id.litview) as ListView
 
         var adaptador:  AdaptadorProductos = AdaptadorProductos(this,menu)
         listView.adapter=adaptador
 
     }
+
     fun agregarProductos(Option:String?){
         when(Option){
             "Antojitos"->{
